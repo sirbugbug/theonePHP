@@ -1,0 +1,14 @@
+
+    interface Msg {
+
+put
+read
+
+current
+next
+previous
+
+
+
+pop
+shift

@@ -1,0 +1,17 @@
+{
+    "name": "DaviWL <daviwldev@gmail.com>",
+    
+    "message": {
+            "class":            "__CLASS__",
+            "method":        "__METHOD__", 
+        
+            "code":{
+                    "false":        "mensagem de erro",
+                    "true":         "mensagem de sucesso"
+            },
+        
+            "mensagem":   "Rota com action não encontrado",
+            "errorcode":     "540"      
+ }
+ }
+ 

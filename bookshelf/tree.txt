@@ -1,0 +1,112 @@
+
+
+carrega site e chama aplicativo/assets
+.htaccess
+
+cria constantes e leitura de sets
+
+carrega boot do framework
+cria ambiente
+
+leitura de configurações da pasta config do framework
+
+executa scripts de inicialização do framework
+
+carrega biblioteca de scripts addons e rotinas de atualizações
+carrega configurações do desenvolvedor
+carrega boot da aplicação
+carrega scripts de inicialização do desenvolvedor
+adiciona rotas do desenvolvedor
+executa rotas na ordem de adição
+    loop( executa controller )
+
+Adendo: API theOne/theOne 
+
+
+
+bookshelf.com ===
+
+theOne
+    bootstrap
+    config
+    core
+    scripts
+    database
+    libraries
+        helpers
+        third_party
+    log
+
+application
+    controllers
+    models
+    views
+
+assets
+    app_name
+        controllers
+        models
+        views
+
+site
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    system
+------  bootstrap   O que executar antes que o aplicativo "funcione"
+                    ler settings (sets)
+                    ler configuração da pasta config
+                    criar ambiente do aplicativo
+                        o ambiente precisa ter:
+                        os objetos config, scriptCore, router, httpInfo
+                    
+                    carrega configuração do framework
+                    executa scripts de inicialização do framework
+
+                    goto application
+------  libraries   biblioteca de extras (addons) 
+                    third_party addons, ajax libs
+------  log
+------  cache
+------  config      configuração do framwork
+
+
+    application
+            bootstrap
+                carrega configuração do desenvolvedor
+                executa scripts de inicialização do desenvolvedor       
+                   
+                    
+                    executa rotas
+                        Executa um Controller
+                        Executa a Template Engine com um objeto View
+                config
+                cache
+        libraries   configurações 
+        config
+        scripts
+
+
+        
+        system/bootstrap
+        
